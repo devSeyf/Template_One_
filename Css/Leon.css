@@ -93,7 +93,7 @@ position: absolute;
 right: 0;
 min-width: 200px;
 top: calc(100% + 15px);
-/*display: none;*/
+display: none;
 
 }
 
@@ -106,10 +106,22 @@ header .links ul::before{
   right: 5px;
   top: -20px;
 }
+header .links:hover ul{
+display: block;
+}
 header .links ul li a{
   display: block;
   padding: 15px;
   text-decoration: none;
   color: #333;
-  transition: 0,3s;
+  transition: 0.3s;
 }
+
+header .links ul li a:hover{
+  padding-left: 25px;
+}
+
+header .links ul li:not(:last-child) a{
+  border-bottom: 1px solid #ddd;
+}
+
