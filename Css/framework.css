@@ -1,0 +1,27 @@
+/* Start Components */
+.special-heading {
+  color: #ebeced;
+  font-size: 100px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -3px;
+  margin: 0;
+}
+
+.special-heading + p {
+  margin: -30px 0  0 ;
+  font-size: 20px;
+  text-align: center;
+  color: #797979  ;
+}
+
+/*Small*/
+@media (max-width: 768px) {
+  .special-heading {
+    font-size: 60px;
+  }.special-heading + p{
+    margin: -20px;
+  }
+}
+
+/* End Components */
