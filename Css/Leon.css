@@ -4,8 +4,16 @@
   --secondary-color: #2c4755;
   --section-padding: 60px;
   --section-background: #f6f6f6;
+  --third-color: #333;
 }
 
+
+.dark{
+    --main-color: #1D2A35;
+  --secondary-color: #f1da32;
+  --section-background: #1D2A35;
+    --third-color: #f6f6f6;
+}
 /* End Variables */
 /* Start Global Rules */
 * {
@@ -51,6 +59,7 @@ body {
 
 header {
   padding: 20px;
+  background-color: var( --section-background);
 }
 
 header .container {
@@ -77,10 +86,11 @@ header .links .icon {
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
+  color: var(--third-color);
 }
 
 header .links .icon span {
-  background-color: #333;
+  background-color: var(--third-color);
   margin-bottom: 5px;
   height: 2px;
 }
@@ -137,7 +147,7 @@ header .links ul li a {
   display: block;
   padding: 15px;
   text-decoration: none;
-  color: #333;
+  color: var(--third-color);
   transition: 0.3s;
 }
 
@@ -177,6 +187,7 @@ header .links ul li:not(:last-child) a {
 .landing .intro-text p {
   font-size: 19px;
   line-height: 1.8;
+  color: var(--secondary-color);
 }
 
 /* End Landing Section */
@@ -305,7 +316,7 @@ flex-basis: 60px;
 /* End Portfolio */
 
 .portfolio .portfolio-content .card {
-  background-color: white;
+  background-color: var(--section-background);
 
 }
 .portfolio .portfolio-content .card img {
