@@ -25,3 +25,9 @@
 }
 
 /* End Components */
+
+/* Space Padding Top and Bottom */
+.spaced-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
