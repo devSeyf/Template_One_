@@ -32,5 +32,26 @@ toggle.addEventListener("click", function() {
 
 
 
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // Prevent the default form submission (page reload)
 
+    // Extract the form data into FormData object
+    const formData = new FormData(this);
 
+    // Send the form data to "send.php" using the Fetch API
+    fetch("send.php", {
+      method: "POST",
+      body: formData
+    })
+    .then(response => response.text()) // Parse the response as plain text
+    .then(data => {
+      // Display the response from PHP inside the page
+      document.getElementById("response").innerHTML = data;
+      this.reset(); // Clear the form inputs after successful submission
+    })
+    .catch(error => {
+      console.error("An error occurred:", error); // Log any errors to the console
+    });
+});
+
+ 
