@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,9 +22,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet"> -->
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
 
 </head>
 
@@ -51,7 +50,7 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-      
+
     </div>
   </header>
 
@@ -152,6 +151,9 @@
   <!-- End Services -->
 
   <!-- Start Portfolio -->
+
+
+
   <div class="portfolio spaced-padding" id="portfolio">
     <div class="container">
       <h2 class="special-heading">Portfolio</h2>
@@ -209,30 +211,51 @@
   <!-- End About -->
 
   <!-- Start Contact  -->
-   <div class="contact .spaced-padding " id="contact">
+  <div class="contact .spaced-padding " id="contact">
     <div class="container">
       <h2 class="special-heading"> Contact </h2>
       <p>We are born to create </p>
       <div class="info spaced-padding ">
         <p class="label">Feel Free to drop us a line at:</p>
-        <a href="mailto:leonagency@mail.com subject=Contact" class="link">leonagency@mail.com</a> 
+        <a href="mailto:leonagency@mail.com subject=Contact" class="link">leonagency@mail.com</a>
         <div class="social">
-          Find Us On Social Networks 
+          Find Us On Social Networks
           <i class="fab fa-youtube"></i>
-          <i class="fab fa-facebook-f"></i> 
+          <i class="fab fa-facebook-f"></i>
           <i class="fab fa-twitter"></i>
         </div>
       </div>
     </div>
-   </div>
+  </div>
   <!-- End Contact -->
-   <!-- Start Footer  -->
-    <div class="footer">
-    &copy; 2025 <span>Leon </span> All Right Reserved
+
+  <!-- Start Form  -->
+  <div class="contact .spaced-padding " id="contact">
+    <div class="container">
+      <h2 class="special-heading"> Form </h2>
+      <p>Contact us via the form</p>
+      <div class="formDiv">
+        <form method="POST" id="contactForm">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <div id="response"></div>
     </div>
-    <!-- End Footer -->
+  </div>
+
+  <!-- End Form -->
+
+  <!-- Start Footer  -->
+  <div class="footer">
+    &copy; 2025 <span>Leon </span> All Right Reserved
+  </div>
+  <!-- End Footer -->
   <script src="logic.js"></script>
- 
+
+
 
 </body>
 
